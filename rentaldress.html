@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Dress Rental - Каталог</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .catalog-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+        }
+        .catalog-item img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .catalog-item button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .catalog-item button:hover {
+            background-color: #0056b3;
+        }
+        /* Стили для цветных кружков сбоку от текста */
+        .color-swatch-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .color-swatch {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-left: 10px; /* Отступ от текста */
+        }
+    </style>
+</head>
+<body>
+   
+        <header>
+            <h1>Love Stories Dress Rental</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">О нас</a></li>
+                    <li><a href="rentaldress.html">Каталог</a></li>
+                    <li><a href="conditionofrental.html">Условия проката</a></li>
+                    <li><a href="aboutus.html">Где нас найти?</a></li>
+                    <li><a href="registration.html">Регистрация</a></li>
+                    <li><a href="exit.html">Вход</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+
+    <div class="container mt-5">
+        <h2>Фильтры товаров</h2>
+        <div class="filters">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="order" class="form-label">Упорядочить:</label>
+                    <select id="order" class="form-select">
+                        <option>по убыванию</option>
+                        <option>по возрастанию</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Фильтр по размеру -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Размер</label>
+                        <select id="size" name="size" class="form-select" required>
+                            <option value="">Выберите размер</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильтр по цвету -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label class="form-label">Цвет</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorRed" value="red">
+                        <label class="form-check-label" for="colorRed">
+                            <div class="color-swatch-container">
+                                Красный
+                                <span class="color-swatch" style="background-color: red;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorBlue" value="blue">
+                        <label class="form-check-label" for="colorBlue">
+                            <div class="color-swatch-container">
+                                Синий
+                                <span class="color-swatch" style="background-color: blue;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorGreen" value="green">
+                        <label class="form-check-label" for="colorGreen">
+                            <div class="color-swatch-container">
+                                Зеленый
+                                <span class="color-swatch" style="background-color: green;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorBlack" value="black">
+                        <label class="form-check-label" for="colorBlack">
+                            <div class="color-swatch-container">
+                                Черный
+                                <span class="color-swatch" style="background-color: black;"></span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Новые цвета -->
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorChampagne" value="champagne">
+                        <label class="form-check-label" for="colorChampagne">
+                            <div class="color-swatch-container">
+                                Шампань
+                                <span class="color-swatch" style="background-color: #f7e7ce;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorBeige" value="beige">
+                        <label class="form-check-label" for="colorBeige">
+                            <div class="color-swatch-container">
+                                Телесный
+                                <span class="color-swatch" style="background-color: #f5f5dc;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorWhite" value="white">
+                        <label class="form-check-label" for="colorWhite">
+                            <div class="color-swatch-container">
+                                Белый
+                                <span class="color-swatch" style="background-color: white; border: 1px solid #ccc;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorLilac" value="lilac">
+                        <label class="form-check-label" for="colorLilac">
+                            <div class="color-swatch-container">
+                                Сиреневый
+                                <span class="color-swatch" style="background-color: #c8a2c8;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorPink" value="pink">
+                        <label class="form-check-label" for="colorPink">
+                            <div class="color-swatch-container">
+                                Розовый
+                                <span class="color-swatch" style="background-color: pink;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorPurple" value="purple">
+                        <label class="form-check-label" for="colorPurple">
+                            <div class="color-swatch-container">
+                                Фиолетовый
+                                <span class="color-swatch" style="background-color: purple;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorMint" value="mint">
+                        <label class="form-check-label" for="colorMint">
+                            <div class="color-swatch-container">
+                                Мятный
+                                <span class="color-swatch" style="background-color: #98ff98;"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="color-checkbox" id="colorLightBlue" value="lightBlue">
+                        <label class="form-check-label" for="colorLightBlue">
+                            <div class="color-swatch-container">
+                                Голубой
+                                <span class="color-swatch" style="background-color: #add8e6;"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Фильтр по виду платья -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="dressType" class="form-label">Вид платья</label>
+                    <select id="dressType" name="dressType" class="form-select" required>
+                        <option value="">Выберите вид платья</option>
+                        <option value="ball">Бальное</option>
+                        <option value="evening">Вечернее</option>
+                        <option value="cocktail">Коктейльное</option>
+                        <option value="wedding">Свадебное</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <section>
+            <h2>Каталог</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="catalog-item">
+                        <img src="images/3.jpg" alt="Платье 1">
+                        <p>Размер: 42</p>
+                        <p>Цвет: Голубой</p>
+                        <p>Цена за сутки: 2900 руб.</p>
+                        <button onclick="window.location.href='dress1.html'">Зарезервировать</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="catalog-item">
+                        <img src="images/2.jpeg" alt="Платье 2">
+                        <p>Размер: 44</p>
+                        <p>Цвет: Черный</p>
+                        <p>Цена за сутки: 4500 руб.</p>
+                        <button onclick="window.location.href='dress2.html'">Зарезервировать</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="catalog-item">
+                        <img src="images/2.jpg" alt="Платье 3">
+                        <p>Размер: 46</p>
+                        <p>Цвет: Белый</p>
+                        <p>Цена за сутки: 16500 руб.</p>
+                        <button onclick="window.location.href='dress3.html'">Зарезервировать</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="catalog-item">
+                        <img src="images/main.jpg" alt="Платье 4">
+                        <p>Размер: 40</p>
+                        <p>Цвет: Синий</p>
+                        <p>Цена за сутки: 2800 руб.</p>
+                        <button onclick="window.location.href='dress4.html'">Зарезервировать</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="catalog-item">
+                        <img src="images/6.jpg" alt="Платье 5">
+                        <p>Размер: 48</p>
+                        <p>Цвет: Розовый</p>
+                        <p>Цена за сутки: 5700 руб.</p>
+                        <button onclick="window.location.href='dress5.html'">Зарезервировать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <style>
+        .catalog-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+        }
+        .catalog-item img {
+            width: 200px; /* Средняя ширина */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            margin-bottom: 10px; /* Отступ снизу */
+        }
+        .catalog-item button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .catalog-item button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

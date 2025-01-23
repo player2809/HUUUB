@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Dress Rental - Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+        <header>
+            <h1>Love Stories Dress Rental</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">О нас</a></li>
+                    <li><a href="rentaldress.html">Каталог</a></li>
+                    <li><a href="conditionofrental.html">Условия проката</a></li>
+                    <li><a href="aboutus.html">Где нас найти?</a></li>
+                    <li><a href="registration.html">Регистрация</a></li>
+                    <li><a href="exit.html">Вход</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+   
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+            }
+            .main-image {
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+            .additional-images {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            .additional-images img {
+                width: 48%;
+                max-height: 150px;
+                object-fit: cover;
+            }
+            .characteristics,
+            .price-calculator {
+                margin-bottom: 20px;
+                padding: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .price-calculator h3 {
+                margin-bottom: 10px;
+            }
+            .price-calculator label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .price-calculator input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+            }
+            .price-calculator button {
+                width: 100%;
+                padding: 10px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            .price-calculator button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Коктейльное платье - Артикул 100499</h1>
+    
+            <!-- Главное фото -->
+            <img src="images/3.jpg" alt="Коктейльное платье" class="main-image">
+    
+            <!-- Дополнительные фото -->
+            <div class="additional-images">
+                <img src="images/blue.jpg" alt="Дополнительное фото 1">
+                
+            </div>
+    
+            <!-- Характеристики -->
+            <div class="characteristics">
+                <h2>Характеристики</h2>
+                <ul>
+                    <li><strong>Категория:</strong> Коктейльное платье</li>
+                    <li><strong>Артикул:</strong> 100499</li>
+                    <li><strong>Цвет:</strong> Голубой</li>
+                    <li><strong>Силуэт:</strong> Ассиметричный, А-силуэт</li>
+                    <li><strong>Длина:</strong> Миди</li>
+                    <li><strong>Материал:</strong> Органза</li>
+                    <li><strong>Цена проката:</strong> 2 900 руб./сут.</li>
+                    <li><strong>Сумма залога:</strong> 4 000 руб.</li>
+                </ul>
+            </div>
+    
+            <!-- Калькулятор расчета стоимости -->
+            <div class="price-calculator">
+                <h2>Калькулятор стоимости проката</h2>
+                <label for="days">Количество дней:</label>
+                <input type="number" id="days" min="1" placeholder="Введите количество дней">
+                <p><strong>Цена за сутки:</strong> 2 900 руб.</p>
+                <p><strong>Сумма залога:</strong> 4 000 руб.</p>
+                <button onclick="calculateCost()">Рассчитать</button>
+                <p id="total-cost" style="margin-top: 10px; font-weight: bold;"></p>
+            </div>
+        </div>
+    
+      
+    
+</body>
+</html>
