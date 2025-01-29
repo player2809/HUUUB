@@ -3,58 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   
+    <title>Регистрация</title>
+
     <style>
-        
-header {
-    background: #222;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+        header {
+            background: #222;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
 
-nav ul li a:hover {
-    background: #f4f4f4;
-    color: #222;
-}
+        nav ul li a:hover {
+            background: #f4f4f4;
+            color: #222;
+        }
 
-section {
-    padding: 20px;
-}
+        section {
+            padding: 20px;
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
+        }
+
+        /* Обновляем box-sizing для всех элементов */
+        * {
+            box-sizing: border-box;
         }
 
         .registration-form {
@@ -80,8 +85,16 @@ section {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 2px solid #007BFF;
             border-radius: 5px;
+            transition: border 0.3s;
+        }
+
+        .registration-form input[type="text"]:focus,
+        .registration-form input[type="email"]:focus,
+        .registration-form input[type="tel"]:focus,
+        .registration-form input[type="password"]:focus {
+            border-color: #0056b3;
         }
 
         .registration-form input[type="checkbox"] {
@@ -99,7 +112,7 @@ section {
         .button-group {
             display: flex;
             justify-content: space-between;
-            gap: 15px; /* Расстояние между кнопками */
+            gap: 15px;
         }
 
         .registration-form button,
@@ -126,67 +139,67 @@ section {
         .button-exit {
             background: #ff0000;
         }
-        
-/* --- Стили для экранов до 1024px --- */
-@media (max-width: 1024px) {
-    header h1 {
-        font-size: 22px;
-    }
 
-    nav ul li {
-        margin: 0 10px;
-    }
+        /* --- Стили для экранов до 1024px --- */
+        @media (max-width: 1024px) {
+            header h1 {
+                font-size: 22px;
+            }
 
-    h2 {
-        font-size: 24px;
-    }
-}
+            nav ul li {
+                margin: 0 10px;
+            }
 
-/* --- Стили для экранов до 768px --- */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+            h2 {
+                font-size: 24px;
+            }
+        }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+        /* --- Стили для экранов до 768px --- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    nav ul li {
-        margin: 10px 0;
-    }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .registration-form {
-        max-width: 300px;
-    }
+            nav ul li {
+                margin: 10px 0;
+            }
 
-    button {
-        font-size: 14px;
-    }
-}
+            .registration-form {
+                max-width: 300px;
+            }
 
-/* --- Стили для экранов до 320px --- */
-@media (max-width: 320px) {
-    header h1 {
-        font-size: 18px;
-    }
+            button {
+                font-size: 14px;
+            }
+        }
 
-    nav ul li a {
-        padding: 5px;
-        font-size: 12px;
-    }
+        /* --- Стили для экранов до 320px --- */
+        @media (max-width: 320px) {
+            header h1 {
+                font-size: 18px;
+            }
 
-    .registration-form input {
-        padding: 6px;
-        font-size: 12px;
-    }
+            nav ul li a {
+                padding: 5px;
+                font-size: 12px;
+            }
 
-    .registration-form button {
-        font-size: 14px;
-    }
-}
+            .registration-form input {
+                padding: 6px;
+                font-size: 12px;
+            }
+
+            .registration-form button {
+                font-size: 14px;
+            }
+        }
 
     </style>
 </head>
@@ -204,7 +217,7 @@ section {
             </ul>
         </nav>
     </header>
-        
+
     <section>
         <h2>Регистрация</h2>
         <form action="submit_registration" method="POST" class="registration-form">
@@ -236,7 +249,6 @@ section {
                 <input type="checkbox" name="rules" id="rules" required>
                 <label for="rules">Согласен с правилами</label>
             </div>
-            
 
             <div class="button-group">
                 <button type="submit">Зарегистрироваться</button>

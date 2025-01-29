@@ -3,81 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Luxury Dress Rental - Где нас найти?</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-            <header>
-                <h1>Love Stories Dress Rental</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="active">О нас</a></li>
-                        <li><a href="rentaldress.html">Каталог</a></li>
-                        <li><a href="conditionofrental.html">Условия проката</a></li>
-                        <li><a href="aboutus.html">Где нас найти?</a></li>
-                        <li><a href="registration.html">Регистрация</a></li>
-                        <li><a href="exit.html">Вход</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </header>
-    
-        <section>
-            <h2>Где нас найти?</h2>
-            <p><strong>Адрес:</strong> г.Ижевск , ул. Удмуртская, д. 255</p>
-            <p><strong>Телефон:</strong> +7 (900) 123-45-67</p>
-            <p><strong>Email:</strong> info@luxurydress.com</p>
-        </section>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-            h1 {
-                text-align: center;
-            }
+    <title>Luxury Dress Rental - Где нас найти?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .image-frame {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            border: 5px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #f8f8f8;
+        }
+
+        .image-frame img {
+            width: 100%; /* Сделать изображение адаптивным */
+            height: auto; /* Сохраняем пропорции изображения */
+            object-fit: cover;
+        }
+
+        /* --- Адаптивные стили для экранов до 768px --- */
+        @media (max-width: 768px) {
             .image-frame {
-                width: 900px;
-                height: 700px;
-                border: 5px solid #ddd;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: hidden;
-                background-color: #f8f8f8;
+                width: 100%; /* Уменьшаем ширину до 100% */
+                height: auto;
             }
+
             .image-frame img {
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: cover;
+                max-height: 400px; /* Ограничиваем высоту */
             }
-            
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            
-    
-            <!-- Главное фото с рамкой -->
-            <div class="image-frame">
-                <img src="images/map.png" alt="Главное фото">
-            </div>
-    
-           
-    </body>
-    </html>
-    
+        }
+
+        /* --- Адаптивные стили для экранов до 320px --- */
+        @media (max-width: 320px) {
+            .image-frame {
+                width: 100%; /* Уменьшаем ширину до 100% */
+                height: auto;
+            }
+
+            .image-frame img {
+                max-height: 300px; /* Ограничиваем высоту для маленьких экранов */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Love Stories Dress Rental</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">О нас</a></li>
+                <li><a href="rentaldress.html">Каталог</a></li>
+                <li><a href="conditionofrental.html">Условия проката</a></li>
+                <li><a href="aboutus.html">Где нас найти?</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+                <li><a href="exit.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Где нас найти?</h2>
+        <p><strong>Адрес:</strong> г.Ижевск , ул. Удмуртская, д. 255</p>
+        <p><strong>Телефон:</strong> +7 (900) 123-45-67</p>
+        <p><strong>Email:</strong> info@luxurydress.com</p>
+    </section>
+
+    <div class="container">
+        <!-- Главное фото с рамкой -->
+        <div class="image-frame">
+            <img src="images/map.png" alt="Главное фото">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -87,6 +87,8 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Чтобы форма занимала 100% пространства на маленьких экранах */
+    box-sizing: border-box; /* Учитываем паддинги и границы */
 }
 
 .registration-form label {
@@ -102,13 +104,35 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    box-sizing: border-box; /* Чтобы учитывать паддинги */
 }
 
-.registration-form button {
-    width: 100%;
+.registration-form input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.rules-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Расстояние между кнопками */
+}
+
+.registration-form button,
+.button-exit {
+    flex: 1;
     padding: 10px;
     background: #222;
     color: #fff;
+    text-align: center;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -116,9 +140,21 @@ button:hover {
     transition: background 0.3s, transform 0.3s;
 }
 
-.registration-form button:hover {
+.registration-form button:hover,
+.button-exit:hover {
     background: #444;
     transform: scale(1.05);
+}
+
+.button-exit {
+    background: #ff0000;
+}
+
+@font-face {
+    font-family: 'EkMuktaSemibold'; 
+    src: url('fonts/EkMuktaSemibold-dV97.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* --- Стили для экранов до 1024px --- */
