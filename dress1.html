@@ -12,7 +12,7 @@
             <h1>Love Stories Dress Rental</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">О нас</a></li>
+                    <li><a href="index.php" class="active">О нас</a></li>
                     <li><a href="rentaldress.html">Каталог</a></li>
                     <li><a href="conditionofrental.html">Условия проката</a></li>
                     <li><a href="aboutus.html">Где нас найти?</a></li>
@@ -116,8 +116,7 @@
                 </ul>
             </div>
     
-            <!-- Калькулятор расчета стоимости -->
-            <div class="price-calculator">
+            <div class="price-calculator"> 
                 <h2>Калькулятор стоимости проката</h2>
                 <label for="days">Количество дней:</label>
                 <input type="number" id="days" min="1" placeholder="Введите количество дней">
@@ -126,6 +125,28 @@
                 <button onclick="calculateCost()">Рассчитать</button>
                 <p id="total-cost" style="margin-top: 10px; font-weight: bold;"></p>
             </div>
+            
+            <script>
+            function calculateCost() {
+                const daysInput = document.getElementById('days');
+                const totalCostElement = document.getElementById('total-cost');
+                const pricePerDay = 2900;
+                const deposit = 4000;
+                
+                const days = parseInt(daysInput.value, 10);
+            
+                if (isNaN(days) || days < 1) {
+                    totalCostElement.textContent = "Пожалуйста, введите корректное количество дней.";
+                    return;
+                }
+            
+                const rentalCost = days * pricePerDay;
+                const total = rentalCost + deposit;
+            
+                totalCostElement.textContent = `Итоговая стоимость: ${total.toLocaleString('ru-RU')} руб. (включая залог)`;
+            }
+            </script>
+            
         </div>
     
       

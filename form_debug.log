@@ -1,0 +1,213 @@
+2025-06-12 11:18:13 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:18:14 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:18:15 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:18:15 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:18:15 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:19:27 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:19:28 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:19:29 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => reject
+)
+
+2025-06-12 11:20:43 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:20:44 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:20:44 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:22:30 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:22:30 — Запрос выполнен успешно
+2025-06-12 11:22:31 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:22:31 — Запрос выполнен успешно
+2025-06-12 11:23:42 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => reject
+)
+
+2025-06-12 11:23:42 — Запрос выполнен успешно
+2025-06-12 11:23:44 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => reject
+)
+
+2025-06-12 11:23:44 — Запрос выполнен успешно
+2025-06-12 11:23:45 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => reject
+)
+
+2025-06-12 11:23:45 — Запрос выполнен успешно
+2025-06-12 11:23:45 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => reject
+)
+
+2025-06-12 11:23:45 — Запрос выполнен успешно
+2025-06-12 11:23:46 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => reject
+)
+
+2025-06-12 11:23:46 — Запрос выполнен успешно
+2025-06-12 11:26:33 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:26:33 — Одобрено успешно
+2025-06-12 11:26:34 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:26:34 — Одобрено успешно
+2025-06-12 11:26:34 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => reject
+)
+
+2025-06-12 11:26:34 — Отклонено успешно
+2025-06-12 11:26:35 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:26:35 — Одобрено успешно
+2025-06-12 11:26:36 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:26:36 — Одобрено успешно
+2025-06-12 11:26:36 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:26:36 — Одобрено успешно
+2025-06-12 11:26:36 — POST: Array
+(
+    [review_id] => 5
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:26:36 — Одобрено успешно
+2025-06-12 11:26:56 — POST: Array
+(
+    [review_id] => 4
+    [rejection_reason] => 
+    [action] => approve
+)
+
+2025-06-12 11:26:56 — Одобрено успешно
+2025-06-12 11:28:12 — POST: Array
+(
+    [review_id] => 6
+    [rejection_reason] => 
+    [action] => reject
+)
+
+2025-06-12 11:28:12 — Отклонено успешно
+2025-06-12 11:28:21 — POST: Array
+(
+    [review_id] => 6
+    [rejection_reason] => не соответсувует
+    [action] => reject
+)
+
+2025-06-12 11:28:21 — Отклонено успешно
